@@ -57,7 +57,7 @@ It validates credentials against the **H2 database** using Spring Data JPA.
 
 | Field | Value |
 |-------|-------|
-| **Username** | Any valid username from the `users` table |
+| **Username** | Any valid username |
 | **Password** | `admin123` (for all users) |
 
 
@@ -77,19 +77,25 @@ After successful login, the Employee Management System home page is displayed at
 Login rules:
  Registration Form
 Field	Validation Rules
-Name	• Only letters (A-Z, a-z)
+
+Name:	
+• Only letters (A-Z, a-z)
 • Maximum 2 spaces allowed
 • No numbers or special characters
-Age	• Minimum: 18
+
+Age: 
+• Minimum: 18
 • Maximum: 60
-Designation	• Only 3 allowed:
+
+Designation:
+• Only 3 allowed:
 - trainer
 - tester
 - programmer
 
 
-H2 Database Console
-Open H2 Console: http://localhost:8090/h2-console
+Open H2 Database Console using a web browser:
+ http://localhost:8090/h2-console
 
 Enter login details:
 
@@ -101,8 +107,8 @@ Password	(leave blank)
 Verify the employee list matches the web UI display.
 
 -------------------------------------------------------------------------
-REST API Testing with Postman
-All REST endpoints are prefixed with /api/employees.
+📨 Do REST API Testing with Postman with CRUD operations (GET/PUT/POST/DELETE).
+- All REST endpoints are prefixed with /api/employees.
 
 Action	Method	URL	Body / Params
 Create Employee	POST	/api/employees	JSON body
